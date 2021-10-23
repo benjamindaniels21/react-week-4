@@ -157,7 +157,7 @@ class Contact extends Component {
                                     />
                                 </Col>
                             </Row>
-                                   <Row className="form-group">
+                            <Row className="form-group">
                                 <Label htmlFor="phoneNum" md={2}>Phone</Label>
                                 <Col md={10}>
                                     <Control.text model=".phoneNum" id="phoneNum" name="phoneNum"
