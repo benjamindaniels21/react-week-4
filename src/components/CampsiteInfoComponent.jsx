@@ -15,6 +15,8 @@ import Modal from "reactstrap/lib/Modal";
 import { LocalForm, Control,Errors } from "react-redux-form";
 import ModalBody from "reactstrap/lib/ModalBody";
 import { Loading } from './LoadingComponent';
+import { baseUrl } from '../shared/baseUrl';
+
 
 
 const minLength = (val) => val && val.length >= 2;
@@ -25,7 +27,7 @@ function RenderCampsite({ campsite }) {
   return (
     <div className="col-md-5 m-1">
       <Card>
-        <CardImg top src={campsite.image} alt={campsite.name} />
+        <CardImg top src={baseUrl + campsite.image} alt={campsite.name} />
         <CardBody>
           <CardText>{campsite.description}</CardText>
         </CardBody>
